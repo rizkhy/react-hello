@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import YouTubeComp from "../../components/YoutubeComp/YouTubeComp";
+// import YouTubeComp from "../../components/YoutubeComp/YouTubeComp";
+import Product from "../Product/Product";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <p>Youtube Konoha</p>
+        {/* <p>Youtube Konoha</p>
         <hr />
         <YouTubeComp
           img="https://cdn.idntimes.com/content-images/duniaku/post/20200713/naruto-uzumaki-confident-9573fbb860fe0680d6c7bf907a1d5edb_600x400.jpg"
@@ -27,10 +28,10 @@ class Home extends Component {
         />
         <YouTubeComp
           img="https://i.pinimg.com/564x/70/4c/1d/704c1d6ce6e9e2607421220477ed600a.jpg"
-          //   time="18.04"
-          //   title="Shikamaru"
-          //   desc="Kagemani No Jutsu"
-        />
+        /> */}
+        <p>Counter</p>
+        <hr />
+        <Product />
       </div>
     );
   }
