@@ -1,8 +1,19 @@
 import React, { Component } from "react";
 // import YouTubeComp from "../../components/YoutubeComp/YouTubeComp";
-import Product from "../Product/Product";
+// import Product from "../Product/Product";
+import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
 
 class Home extends Component {
+  state = {
+    showComponent: true,
+  };
+  componentDidMount() {
+    // setTimeout(() => {
+    //   this.setState({
+    //     showComponent: false,
+    //   });
+    // }, 6000);
+  }
   render() {
     return (
       <div>
@@ -29,9 +40,11 @@ class Home extends Component {
         <YouTubeComp
           img="https://i.pinimg.com/564x/70/4c/1d/704c1d6ce6e9e2607421220477ed600a.jpg"
         /> */}
-        <p>Counter</p>
+        {/* <p>Counter</p>
         <hr />
-        <Product />
+        <Product /> */}
+        <p>LfeCycle Component</p>
+        {this.state.showComponent ? <LifeCycleComp /> : null}
       </div>
     );
   }
